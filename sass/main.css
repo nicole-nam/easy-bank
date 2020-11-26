@@ -175,8 +175,8 @@ header .hamburger-menu > span {
   height: 2px;
   background-color: #2d314d;
   margin: 6px 0px;
-  -webkit-transform-origin: 2px 1px;
-          transform-origin: 2px 1px;
+  -webkit-transform-origin: 1.5px 1px;
+          transform-origin: 1.5px 1px;
 }
 
 header .hamburger-menu.open > span:first-child {
