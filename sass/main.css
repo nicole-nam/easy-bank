@@ -110,6 +110,8 @@ body {
   line-height: 1;
   font-family: "Public Sans", sans-serif;
   font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ol,
@@ -139,6 +141,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -177,13 +180,27 @@ header .hamburger-menu > span {
 header .main-menu a {
   font-size: 14px;
   color: #9698a6;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding-bottom: 54px;
 }
 
 header .main-menu a:not(:last-child) {
   margin-right: 30px;
 }
 
-.btn {
+header .main-menu a:hover {
+  color: #2d314d;
+  border-bottom: 4px solid;
+  -o-border-image: linear-gradient(to right, #31d35c, #2bb7da);
+     border-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+     border-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-image-slice: 1;
+  width: 100%;
+}
+
+header .btn {
   padding: 12px 35px;
   border: none;
   border-radius: 50px;
@@ -191,5 +208,11 @@ header .main-menu a:not(:last-child) {
   background: linear-gradient(to left, #31d35c, #2bb7da);
   color: white;
   font-weight: 400;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+header .btn:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,21 +22,37 @@ header {
     a {
       font-size: $font-sm;
       color: $grayBlue;
+      font-weight: 400;
+      transition: all 0.3s ease-in;
+      padding-bottom: 54px;
 
-    &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 30px;
-    }
+      }
+
+      &:hover {
+        color: $darkBlue;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, $limeGreen, $brightCyan);
+        border-image-slice: 1;
+        width: 100%;
+      }
     }
   }
-}
 
-//buttons
+  //buttons
 
-.btn {
-  padding: 12px 35px;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to left, $limeGreen, $brightCyan);
-  color: $white;
-  font-weight: 400;
+  .btn {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to left, $limeGreen, $brightCyan);
+    color: $white;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
