@@ -1,3 +1,5 @@
+@import "mixins";
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,9 +109,8 @@ section {
 }
 body {
   line-height: 1;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 300;
-  
 }
 ol,
 ul {
@@ -131,6 +132,22 @@ table {
   border-spacing: 0;
 }
 
-a, a:visited, a:hover {
-    text-decoration: none;
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//visiblity
+
+.hide-for-mobile{
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(medium) {
+        display:none;
+    }
 }

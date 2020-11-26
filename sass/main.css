@@ -108,7 +108,7 @@ section {
 
 body {
   line-height: 1;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -135,8 +135,22 @@ table {
   border-spacing: 0;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .flex {
@@ -165,16 +179,13 @@ header .main-menu a {
   color: #9698a6;
 }
 
-button {
+.btn {
   padding: 12px 35px;
   border: none;
   border-radius: 50px;
   background: -webkit-gradient(linear, right top, left top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to left, #31d35c, #2bb7da);
-}
-
-button .btn-link {
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,16 +2,13 @@
 
 //header flex
 .flex {
-    display: flex;
-    justify-content: space-between;
-    
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 //hamburger memnu
 header {
-    padding: 30px;
+  padding: 30px;
   & .hamburger-menu {
     > span {
       display: block;
@@ -22,27 +19,20 @@ header {
     }
   }
   & .main-menu {
-      a{
-        font-size: $font-sm;
-        color: $grayBlue;
-      }
+    a {
+      font-size: $font-sm;
+      color: $grayBlue;
+    }
   }
-
 }
-
 
 //buttons
 
-button {
-    padding: 12px 35px;
-    border:none;
-    border-radius: 50px;
-    background: linear-gradient(to left, $limeGreen, $brightCyan);
-    
-    & .btn-link {
-        color: $white;
-        font-weight: 700;
-    }
-
-
+.btn {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to left, $limeGreen, $brightCyan);
+  color: $white;
+  font-weight: 400;
 }
