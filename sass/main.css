@@ -175,6 +175,22 @@ header .hamburger-menu > span {
   height: 2px;
   background-color: #2d314d;
   margin: 6px 0px;
+  -webkit-transform-origin: 2px 1px;
+          transform-origin: 2px 1px;
+}
+
+header .hamburger-menu.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .hamburger-menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+header .hamburger-menu.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 header .main-menu a {

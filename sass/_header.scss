@@ -16,6 +16,20 @@ header {
       height: 2px;
       background-color: $darkBlue;
       margin: 6px 0px;
+      transform-origin: 2px 1px;
+
+    }
+
+    &.open {
+        > span:first-child{
+            transform: rotate(45deg);
+        }
+        > span:nth-child(2){
+            opacity: 0;
+        }
+        > span:last-child{
+            transform: rotate(-45deg);
+        }
     }
   }
   & .main-menu {
