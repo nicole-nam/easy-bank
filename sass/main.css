@@ -179,6 +179,10 @@ header .main-menu a {
   color: #9698a6;
 }
 
+header .main-menu a:not(:last-child) {
+  margin-right: 30px;
+}
+
 .btn {
   padding: 12px 35px;
   border: none;

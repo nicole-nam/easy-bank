@@ -22,6 +22,10 @@ header {
     a {
       font-size: $font-sm;
       color: $grayBlue;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
     }
   }
 }
