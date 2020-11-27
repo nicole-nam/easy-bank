@@ -22,15 +22,12 @@
   
       > span:first-child {
         transform: rotate(45deg);
-        transition: 0.3s ease-in;
       }
       > span:nth-child(2) {
         opacity: 0;
-        transition: 0.3s ease-in;
       }
       > span:last-child {
         transform: rotate(-45deg);
-        transition: 0.3s ease-in;
       }
     }
   }
@@ -41,6 +38,8 @@
     background-color: $darkBlue;
     margin: 6px 0px;
     transform-origin: 1.5px 1px;
+    transition: 0.3s ease-in-out;
+
   }
 
   & .main-menu {

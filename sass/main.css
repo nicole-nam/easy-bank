@@ -241,21 +241,15 @@ a:hover {
 .header.open .hamburger-menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .header.open .hamburger-menu > span:nth-child(2) {
   opacity: 0;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .header.open .hamburger-menu > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .header span {
@@ -266,6 +260,8 @@ a:hover {
   margin: 6px 0px;
   -webkit-transform-origin: 1.5px 1px;
           transform-origin: 1.5px 1px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .header .main-menu a {
