@@ -1,13 +1,23 @@
 .about {
   & .hero-image {
-    // background-image: url("/images/bg-intro-mobile.svg");
-    // height: 800px;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    position: relative;
+    background-image: url("/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/images/image-mockups.png");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: center bottom;
+      height: 100%;
+      width: 100%;
+    }
   }
-  //   > img {
-  //     position: absolute;
-  //     width: 100%;
-  //     top: -150px;
-  //   }
+  & .hero-text {
+  }
 }

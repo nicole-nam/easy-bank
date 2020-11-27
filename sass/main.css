@@ -361,4 +361,24 @@ a:hover {
     opacity: 0;
   }
 }
+
+.about .hero-image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+}
+
+.about .hero-image::before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/image-mockups.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
