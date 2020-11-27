@@ -1,4 +1,5 @@
 @import "variables";
+@import "animations";
 
 //header flex
 .flex {
@@ -7,38 +8,48 @@
 }
 
 //hamburger memnu
-header {
-  padding: 30px;
-  & .hamburger-menu {
-    > span {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: $darkBlue;
-      margin: 6px 0px;
-      transform-origin: 1.5px 1px;
+.header {
+  padding: 25px;
 
+ 
+  &.open {
+    .overlay {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out forwards;
     }
 
-    &.open {
-        > span:first-child{
-            transform: rotate(45deg);
-        }
-        > span:nth-child(2){
-            opacity: 0;
-        }
-        > span:last-child{
-            transform: rotate(-45deg);
-        }
+    & .hamburger-menu {
+  
+      > span:first-child {
+        transform: rotate(45deg);
+        transition: 0.3s ease-in;
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+        transition: 0.3s ease-in;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+        transition: 0.3s ease-in;
+      }
     }
   }
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: $darkBlue;
+    margin: 6px 0px;
+    transform-origin: 1.5px 1px;
+  }
+
   & .main-menu {
     a {
       font-size: $font-sm;
       color: $grayBlue;
       font-weight: 400;
       transition: all 0.3s ease-in;
-      padding-bottom: 54px;
+      padding-bottom: 30px;
 
       &:not(:last-child) {
         margin-right: 30px;
