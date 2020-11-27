@@ -230,6 +230,10 @@ a:hover {
           justify-content: space-between;
 }
 
+.header {
+  background: white;
+}
+
 .header nav {
   padding-top: 17px;
   padding-bottom: 17px;
@@ -268,7 +272,6 @@ a:hover {
 }
 
 .header .header-menu {
-  display: none;
   position: absolute;
   width: calc(100% - 30px);
   left: 50%;
@@ -332,6 +335,12 @@ a:hover {
 .container {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @keyframes fadeIn {

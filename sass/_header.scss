@@ -9,6 +9,7 @@
 
 //hamburger memnu
 .header {
+  background: $white;
   nav {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -108,4 +109,13 @@
 .container {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+
+//fixed header
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width:100%;
 }
