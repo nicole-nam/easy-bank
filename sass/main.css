@@ -203,6 +203,22 @@ a:hover {
   background-image: linear-gradient(#2d314d, transparent);
 }
 
+.btn {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, right top, left top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to left, #31d35c, #2bb7da);
+  color: white;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -317,22 +333,6 @@ a:hover {
   width: 100%;
 }
 
-.header .btn {
-  padding: 12px 35px;
-  border: none;
-  border-radius: 50px;
-  background: -webkit-gradient(linear, right top, left top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to left, #31d35c, #2bb7da);
-  color: white;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.header .btn:hover {
-  opacity: 0.7;
-}
-
 .container {
   padding-left: 25px;
   padding-right: 25px;
@@ -360,13 +360,5 @@ a:hover {
   to {
     opacity: 0;
   }
-}
-
-.hero-image {
-  background-image: url("/images/bg-intro-desktop.svg");
-  height: 950px;
-  background-position: -150px -370px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

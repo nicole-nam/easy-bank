@@ -1,7 +1,13 @@
-.hero-image {
-    background-image: url('/images/bg-intro-desktop.svg');
-    height: 950px;
-    background-position: -150px -370px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about {
+  & .hero-image {
+    // background-image: url("/images/bg-intro-mobile.svg");
+    // height: 800px;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
+  //   > img {
+  //     position: absolute;
+  //     width: 100%;
+  //     top: -150px;
+  //   }
 }
