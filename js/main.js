@@ -3,8 +3,7 @@ const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header-menu');
 const medaiQuery = window.matchMedia('(max-width: 768px)');
 
-
-
+//click events
 
 btnHamburger.addEventListener('click', function(){
 
@@ -19,6 +18,8 @@ btnHamburger.addEventListener('click', function(){
 
 });
     
+
+//media query 
 
 medaiQuery.addEventListener('change', (e) => {
     if((e.matches) && header.classList.contains('open')){
