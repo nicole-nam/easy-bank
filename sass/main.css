@@ -145,6 +145,8 @@ section {
 body {
   line-height: 1;
   font-family: "Public Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 300;
 }
 
@@ -193,7 +195,7 @@ a:hover {
 .overlay {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -228,8 +230,9 @@ a:hover {
           justify-content: space-between;
 }
 
-.header {
-  padding: 25px;
+.header nav {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .header.open .overlay {
@@ -262,6 +265,28 @@ a:hover {
           transform-origin: 1.5px 1px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.header .header-menu {
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.header .header-menu a {
+  display: block;
+  padding: 10px;
+  color: #2d314d;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
 }
 
 .header .main-menu a {
@@ -301,6 +326,11 @@ a:hover {
 
 .header .btn:hover {
   opacity: 0.7;
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @keyframes fadeIn {
