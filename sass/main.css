@@ -238,21 +238,21 @@ a:hover {
           animation: fadeIn 0.5s ease-in-out forwards;
 }
 
-.header.open .hamburger-menu > span:first-child {
+.header.open .hamburger-toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .hamburger-menu > span:nth-child(2) {
+.header.open .hamburger-toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .hamburger-menu > span:last-child {
+.header.open .hamburger-toggle > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.header span {
+.header .hamburger-toggle > span {
   display: block;
   width: 26px;
   height: 2px;
