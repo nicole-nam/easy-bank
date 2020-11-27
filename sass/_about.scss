@@ -1,4 +1,7 @@
+@import "variables";
+
 .about {
+  margin-bottom: 60px;
   & .hero-image {
     position: relative;
     background-image: url("/images/bg-intro-mobile.svg");
@@ -19,5 +22,20 @@
     }
   }
   & .hero-text {
+    text-align: center;
+    margin: 25px 25px;
+    font-weight: 400;
+
+    h1 {
+      font-size: $font-large;
+      color: $darkBlue;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: $font-sm;
+      margin-bottom: 36px;
+      line-height: 1.5;
+      color: $grayBlue;
+    }
   }
 }
