@@ -335,7 +335,7 @@ a:hover {
 
 .container {
   padding-left: 25px;
-  padding-right: 50px;
+  padding-right: 25px;
 }
 
 .sticky {
@@ -366,6 +366,18 @@ a:hover {
   margin-bottom: 60px;
 }
 
+@media (min-width: 768px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .about .hero-image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -373,6 +385,15 @@ a:hover {
   background-size: cover;
   background-position: center;
   min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  .about .hero-image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-image: url("/images/bg-intro-desktop.svg");
+  }
 }
 
 .about .hero-image::before {
@@ -391,6 +412,14 @@ a:hover {
   margin: 25px 25px;
 }
 
+@media (min-width: 768px) {
+  .about .hero-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .about .hero-text h1 {
   font-size: 32px;
   color: #2d314d;
@@ -403,17 +432,6 @@ a:hover {
   margin-bottom: 36px;
   line-height: 1.5;
   color: #9698a6;
-}
-
-@media (min-width: 768px) {
-  .about .hero-image {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
-    min-height: 500px;
-    background-image: url("/images/bg-intro-desktop.svg");
-  }
 }
 
 .services-text {
