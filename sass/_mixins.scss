@@ -14,3 +14,15 @@ $breakpoints-down: ("small": "767px", "medium": "1023px", "large": "1439px");
         @content;
     }
 }
+
+@mixin info{
+    font-size: $font-sm;
+    margin-bottom: 36px;
+    line-height: 1.5;
+    color: $grayBlue;
+}
+
+@mixin centerText {
+    text-align: center;
+    margin: 25px 25px;
+}

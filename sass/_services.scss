@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+.service {
+    
+}
+
+.services-text {
+  @include centerText;
+
+  h2 {
+    font-size: $font-med;
+    color: $darkBlue;
+    margin-bottom: 30px;
+    padding-top: 50px;
+  }
+  p {
+    @include info;
+    margin-bottom: 50px;
+  }
+}

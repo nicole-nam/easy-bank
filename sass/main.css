@@ -306,7 +306,7 @@ a:hover {
   padding: 10px;
   color: #2d314d;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -335,7 +335,7 @@ a:hover {
 
 .container {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 50px;
 }
 
 .sticky {
@@ -389,13 +389,13 @@ a:hover {
 .about .hero-text {
   text-align: center;
   margin: 25px 25px;
-  font-weight: 400;
 }
 
 .about .hero-text h1 {
   font-size: 32px;
   color: #2d314d;
   margin-bottom: 24px;
+  font-weight: 400;
 }
 
 .about .hero-text p {
@@ -403,5 +403,36 @@ a:hover {
   margin-bottom: 36px;
   line-height: 1.5;
   color: #9698a6;
+}
+
+@media (min-width: 768px) {
+  .about .hero-image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    min-height: 500px;
+    background-image: url("/images/bg-intro-desktop.svg");
+  }
+}
+
+.services-text {
+  text-align: center;
+  margin: 25px 25px;
+}
+
+.services-text h2 {
+  font-size: 28px;
+  color: #2d314d;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.services-text p {
+  font-size: 14px;
+  margin-bottom: 36px;
+  line-height: 1.5;
+  color: #9698a6;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

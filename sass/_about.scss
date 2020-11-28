@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .about {
   margin-bottom: 60px;
@@ -22,20 +23,31 @@
     }
   }
   & .hero-text {
-    text-align: center;
-    margin: 25px 25px;
-    font-weight: 400;
+    @include centerText;
 
     h1 {
       font-size: $font-large;
       color: $darkBlue;
       margin-bottom: 24px;
+      font-weight: 400;
     }
     p {
-      font-size: $font-sm;
-      margin-bottom: 36px;
-      line-height: 1.5;
-      color: $grayBlue;
+      @include info;
+    }
+  }
+}
+
+// breakpoint
+
+.about {
+  @include breakpoint-up(medium) {
+    .hero-image {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right;
+      min-height: 500px;
+      background-image: url("/images/bg-intro-desktop.svg");
     }
   }
 }
