@@ -299,6 +299,7 @@ a:hover {
   padding-bottom: 20px;
   background-color: white;
   border-radius: 5px;
+  z-index: 10;
 }
 
 .header .header-menu a {
@@ -306,7 +307,7 @@ a:hover {
   padding: 10px;
   color: #2d314d;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -338,6 +339,13 @@ a:hover {
   padding-right: 25px;
 }
 
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -366,7 +374,7 @@ a:hover {
   margin-bottom: 60px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -375,6 +383,10 @@ a:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fafafa;
   }
 }
 
@@ -387,12 +399,16 @@ a:hover {
   min-height: 280px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about .hero-image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     background-image: url("/images/bg-intro-desktop.svg");
+    background-position: left center;
+    background-size: 170%;
+    left: 30px;
+    min-height: 400px;
   }
 }
 
@@ -407,16 +423,26 @@ a:hover {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .about .hero-image::before {
+    height: 500px;
+    left: 100px;
+    background-size: 75%;
+  }
+}
+
 .about .hero-text {
   text-align: center;
   margin: 25px 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about .hero-text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    text-align: left;
+    padding-left: 75px;
   }
 }
 

@@ -3,9 +3,11 @@
 
 .about {
   //breakpoints
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    background-color: $lightGray;
   }
 
   margin-bottom: 60px;
@@ -17,10 +19,14 @@
     background-size: cover;
     background-position: center;
     min-height: 280px;
-    @include breakpoint-up(medium) {
-      flex: 1;
+    @include breakpoint-up(large) {
+      flex: 2;
       background-image: url("/images/bg-intro-desktop.svg");
-      background
+      background-position: left center;
+      background-size: 170%;
+      left: 30px;
+      min-height: 400px;
+
     }
 
     &::before {
@@ -32,13 +38,20 @@
       background-position: center bottom;
       height: 100%;
       width: 100%;
+      @include breakpoint-up(large) {
+        height: 500px;
+        left: 100px;
+        background-size: 75%;
+      }
     }
   }
   & .hero-text {
     @include centerText;
 
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       flex: 1;
+      text-align: left;
+      padding-left: 75px;
     }
 
     h1 {
@@ -51,21 +64,5 @@
       @include info;
     }
   }
-  
 }
 
-// breakpoint
-
-// .about {
-//   @include breakpoint-up(medium) {
-//     .hero-image {
-//       position: relative;
-//       background-repeat: no-repeat;
-//       background-size: 75%;
-//       background-position: center;
-//       // left: 30%;
-//       min-height: 500px;
-//       background-image: url("/images/bg-intro-desktop.svg");
-//     }
-//   }
-// }

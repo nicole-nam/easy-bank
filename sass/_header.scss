@@ -57,14 +57,14 @@
     padding-bottom: 20px;
     background-color: $white;
     border-radius: 5px;
-
+    z-index: 10;
 
     a {
       display: block;
       padding: 10px;
       color: $darkBlue;
       font-weight: 400;
-      font-size: $font-med;
+      font-size: $font-sm;
       text-align: center;
     }
   }
@@ -91,21 +91,23 @@
   }
 
   //buttons
-
-
 }
 
 //padding
 .container {
   padding-left: 25px;
   padding-right: 25px;
-}
 
+  @include breakpoint-up(large) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 //fixed header
 
 .sticky {
   position: fixed;
   top: 0;
-  width:100%;
+  width: 100%;
 }
