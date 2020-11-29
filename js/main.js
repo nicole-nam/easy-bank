@@ -2,7 +2,7 @@ const btnHamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.header');
 const headerMenu = document.querySelector('.header-menu');
 const medaiQuery = window.matchMedia('(max-width: 768px)');
-
+const overlay = document.querySelector('.overlay');
 //click events
 
 btnHamburger.addEventListener('click', function(){
@@ -10,10 +10,14 @@ btnHamburger.addEventListener('click', function(){
     if(header.classList.contains('open')){
         header.classList.remove('open');
         headerMenu.style.display = "none";
-     
+        overlay.style.display = 'none';
+
+          
     }else  {
         header.classList.add('open');
         headerMenu.style.display = 'block';
+        overlay.style.display = 'block';
+
     }
 
 });
@@ -24,22 +28,27 @@ btnHamburger.addEventListener('click', function(){
 medaiQuery.addEventListener('change', (e) => {
     if((e.matches) && header.classList.contains('open')){
         headerMenu.style.display ='block';
+        overlay.style.display = 'block';
+
+
     }else {
         headerMenu.style.display = 'none';
+        overlay.style.display = 'none';
+
     }
 })
 
 
 //fixed header
 
-window.onscroll = function() {stickyHeader()};
+// window.onscroll = function() {stickyHeader()};
 
-const sticky = header.offsetTop;
+// const sticky = header.offsetTop;
 
-function stickyHeader(){
-    if (window.pageYOffset > sticky) {
-        header.classList.add('sticky');
-    }else{
-        header.classList.remove('sticky');
-    }
-}
+// function stickyHeader(){
+//     if (window.pageYOffset > sticky) {
+//         header.classList.add('sticky');
+//     }else{
+//         header.classList.remove('sticky');
+//     }
+// }

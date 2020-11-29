@@ -192,17 +192,6 @@ a:hover {
   }
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 65px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
-  background-image: linear-gradient(#2d314d, transparent);
-}
-
 .btn {
   padding: 12px 35px;
   border: none;
@@ -352,6 +341,17 @@ a:hover {
   width: 100%;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -374,7 +374,7 @@ a:hover {
   margin-bottom: 60px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,6 +397,20 @@ a:hover {
   background-size: cover;
   background-position: center;
   min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  .about .hero-image {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-position: left center;
+    background-size: 170%;
+    left: 30px;
+    top: 10px;
+    min-height: 400px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -423,6 +437,13 @@ a:hover {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .about .hero-image::before {
+    height: 400px;
+    left: 50px;
+  }
+}
+
 @media (min-width: 1024px) {
   .about .hero-image::before {
     height: 500px;
@@ -436,7 +457,7 @@ a:hover {
   margin: 25px 25px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about .hero-text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
