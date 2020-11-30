@@ -39,16 +39,17 @@ medaiQuery.addEventListener('change', (e) => {
 })
 
 
-//fixed header
+// fixed header
 
-// window.onscroll = function() {stickyHeader()};
+window.onscroll = function() {myFunction()};
 
-// const sticky = header.offsetTop;
+var sticky = header.offsetTop;
 
-// function stickyHeader(){
-//     if (window.pageYOffset > sticky) {
-//         header.classList.add('sticky');
-//     }else{
-//         header.classList.remove('sticky');
-//     }
-// }
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+      console.log("hello world");
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

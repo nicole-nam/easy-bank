@@ -375,10 +375,6 @@ a:hover {
   }
 }
 
-.about {
-  margin-bottom: 60px;
-}
-
 @media (min-width: 768px) {
   .about {
     display: -webkit-box;
@@ -496,6 +492,14 @@ a:hover {
   margin: 25px 25px;
 }
 
+@media (min-width: 768px) {
+  .services-text {
+    text-align: left;
+    width: 50%;
+    padding-left: 75px;
+  }
+}
+
 .services-text h2 {
   font-size: 28px;
   color: #2d314d;
@@ -503,6 +507,12 @@ a:hover {
   padding-top: 50px;
   padding: 0px 25px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .services-text h2 {
+    padding: 0px;
+  }
 }
 
 .services-text p {
@@ -513,19 +523,42 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.easyBank {
+@media (min-width: 768px) {
+  .easybankGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.easybankGrid .easyBank {
   text-align: center;
   margin: 25px 25px;
 }
 
-.easyBank .sub-title {
+@media (min-width: 768px) {
+  .easybankGrid .easyBank {
+    text-align: left;
+  }
+}
+
+.easybankGrid .easyBank .sub-title {
   font-size: 20px;
   color: #2d314d;
   font-weight: 400;
   padding: 20px;
 }
 
-.easyBank p {
+@media (min-width: 768px) {
+  .easybankGrid .easyBank .sub-title {
+    padding-left: 0px;
+  }
+}
+
+.easybankGrid .easyBank p {
   font-size: 14px;
   margin-bottom: 36px;
   line-height: 1.5;
