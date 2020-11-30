@@ -59,6 +59,7 @@
   }
   & .hero-text {
     @include centerText;
+    padding-bottom: 50px;
 
     @include breakpoint-up(medium) {
       flex: 1;

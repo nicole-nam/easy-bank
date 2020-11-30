@@ -455,6 +455,7 @@ a:hover {
 .about .hero-text {
   text-align: center;
   margin: 25px 25px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
