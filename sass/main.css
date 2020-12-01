@@ -648,6 +648,10 @@ footer {
   }
 }
 
+footer .logo-container {
+  padding-top: 20px;
+}
+
 footer .footer-btn {
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
@@ -655,6 +659,7 @@ footer .footer-btn {
   text-align: right;
   width: 100%;
   margin: auto;
+  line-height: 2;
 }
 
 .social-icons {
@@ -679,16 +684,6 @@ footer .footer-btn {
   }
 }
 
-a {
-  color: white;
-  line-height: 3;
-  font-weight: 400;
-}
-
-a:hover {
-  color: #2bb7da;
-}
-
 .footer-col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,6 +695,16 @@ a:hover {
   margin-top: 20px;
   font-weight: 400;
   padding-left: 50px;
+}
+
+.footer-col-1 a {
+  color: white;
+  line-height: 3;
+  font-weight: 400;
+}
+
+.footer-col-1 a:hover {
+  color: #2bb7da;
 }
 
 @media (min-width: 768px) {
@@ -719,6 +724,16 @@ a:hover {
   margin-bottom: 20px;
   font-weight: 400;
   padding-left: 50px;
+}
+
+.footer-col-2 a {
+  color: white;
+  line-height: 3;
+  font-weight: 400;
+}
+
+.footer-col-2 a:hover {
+  color: #2bb7da;
 }
 
 p {
