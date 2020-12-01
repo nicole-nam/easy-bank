@@ -567,9 +567,9 @@ a:hover {
 }
 
 .blogs {
+  padding-bottom: 100px;
   background-color: #fafafa;
-  padding: 25px 25px;
-  padding-top: 100px;
+  padding: 100px 25px 100px 25px;
   text-align: left;
 }
 
