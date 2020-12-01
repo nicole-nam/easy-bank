@@ -388,6 +388,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     background-color: #fafafa;
+    height: 500px;
   }
 }
 
@@ -409,7 +410,7 @@ a:hover {
     background-position: left center;
     background-size: 170%;
     left: 30px;
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -422,7 +423,7 @@ a:hover {
     background-position: left center;
     background-size: 170%;
     left: 30px;
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -437,18 +438,11 @@ a:hover {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .about .hero-image::before {
-    height: 400px;
-    left: 50px;
-  }
-}
-
 @media (min-width: 1024px) {
   .about .hero-image::before {
-    height: 500px;
-    left: 100px;
-    background-size: 75%;
+    height: 600px;
+    left: 220px;
+    background-size: 65%;
   }
 }
 
@@ -642,7 +636,28 @@ footer {
   background-color: #2d314d;
 }
 
-footer .social-icons {
+@media (min-width: 768px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+footer .footer-btn {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  text-align: right;
+  width: 100%;
+  margin: auto;
+}
+
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,17 +666,30 @@ footer .social-icons {
           justify-content: center;
 }
 
-footer .social-icons li:not(:last-child) {
+.social-icons li:not(:last-child) {
   padding-right: 20px;
 }
 
-footer a {
+@media (min-width: 768px) {
+  .social-icons {
+    padding-top: 50px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+a {
   color: white;
   line-height: 3;
   font-weight: 400;
 }
 
-footer .footer-col-1 {
+a:hover {
+  color: #2bb7da;
+}
+
+.footer-col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,9 +699,16 @@ footer .footer-col-1 {
           flex-direction: column;
   margin-top: 20px;
   font-weight: 400;
+  padding-left: 50px;
 }
 
-footer .footer-col-2 {
+@media (min-width: 768px) {
+  .footer-col-1 {
+    margin-top: 0px;
+  }
+}
+
+.footer-col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,9 +718,10 @@ footer .footer-col-2 {
           flex-direction: column;
   margin-bottom: 20px;
   font-weight: 400;
+  padding-left: 50px;
 }
 
-footer p {
+p {
   color: #9698a6;
   font-size: 14px;
   margin: 25px 0px;

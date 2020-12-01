@@ -8,9 +8,8 @@
     flex-direction: row-reverse;
     align-items: center;
     background-color: $lightGray;
+    height: 500px;
   }
-
-
 
   & .hero-image {
     position: relative;
@@ -25,7 +24,7 @@
       background-position: left center;
       background-size: 170%;
       left: 30px;
-      min-height: 400px;
+      min-height: 500px;
     }
     @include breakpoint-up(large) {
       flex: 2;
@@ -33,7 +32,7 @@
       background-position: left center;
       background-size: 170%;
       left: 30px;
-      min-height: 400px;
+      min-height: 500px;
     }
 
     &::before {
@@ -46,14 +45,12 @@
       height: 100%;
       width: 100%;
 
-      @include breakpoint-up(medium) {
-        height: 400px;
-        left: 50px;
-      }
+ 
       @include breakpoint-up(large) {
-        height: 500px;
-        left: 100px;
-        background-size: 75%;
+        height: 600px;
+        left: 220px;
+        background-size: 65%;
+
       }
     }
   }
